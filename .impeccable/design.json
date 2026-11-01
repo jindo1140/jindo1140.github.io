@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-02T00:00:00Z",
+  "title": "Design System: 박진원 경력 포트폴리오",
+  "extensions": {
+    "shadows": [],
+    "motion": [
+      {"name": "ease", "value": "cubic-bezier(.16,1,.3,1)", "purpose": "Button movement, 350ms."},
+      {"name": "reduced-motion", "value": "none", "purpose": "Disable transitions and smooth scrolling when requested by the operating system."}
+    ],
+    "breakpoints": [
+      {"name": "compact-desktop", "value": "1100px"},
+      {"name": "tablet", "value": "800px"},
+      {"name": "phone", "value": "480px"}
+    ]
+  },
+  "components": [],
+  "narrative": {
+    "overview": "Toss-inspired Korean professional career portfolio with framework design and AI development practice emphasized.",
+    "rules": ["Preserve career evidence and supplied resume truth.", "Keep the framework demo explicitly illustrative.", "Use no U+00B7 in copy."]
+  }
+}

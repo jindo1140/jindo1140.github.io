@@ -1,38 +1,33 @@
-# 박진원 포트폴리오
+# 박진원 경력기술서 및 포트폴리오
 
-경력기술서에 기반한 반응형 정적 포트폴리오. 빌드 과정이나 외부 라이브러리가 필요 없습니다.
+공개 사이트: https://jindo1140.github.io/
 
-## 미리보기
+11년의 제조 IT 경험을 바탕으로 프레임워크 설계, AI 기반 개발, 글로벌 MES 구축과 운영 개선을 소개합니다. 경력기술서 원문은 사이트의 다운로드 버튼이나 `assets/career-profile.txt`에서 확인할 수 있습니다.
 
-이 폴더에서 `python -m http.server 4173`을 실행하고 http://localhost:4173 에 접속합니다. `index.html`을 직접 열어도 표시됩니다.
+## 구성
 
-## GitHub Pages 배포
+- `index.html`: 소개, 핵심 역량, 수행 성과, 프로젝트 6개 및 전체 경력
+- `styles.css`: 반응형 화면과 접근성 스타일
+- `script.js`: 업무 화면 개념도 선택 및 프로젝트 분류
+- `assets`: Pretendard 폰트, 폰트 라이선스 및 경력기술서
+- `DESIGN.md`: 디자인 기준
 
-1. GitHub에 **jindo1140** 계정으로 로그인합니다.
-2. 이름이 정확히 **jindo1140.github.io**인 공개 저장소를 만듭니다.
-3. 이 폴더의 `index.html`, `styles.css`, `script.js`, `favicon.svg`, `.nojekyll` 및 `assets` 폴더를 저장소 최상위에 업로드합니다.
-4. 저장소 **Settings → Pages → Build and deployment → Deploy from a branch**를 선택합니다.
-5. 브랜치는 **main**, 폴더는 **/ (root)**로 선택하고 저장합니다.
-6. 배포 완료 후 https://jindo1140.github.io 에서 확인합니다.
+## 실행과 배포
 
-배포에는 해당 계정의 저장소 생성 / 관리 권한이 필요합니다. GitHub CLI 사용 시 `gh auth status`로 현재 계정을 확인합니다.
+이 폴더에서 `python -m http.server 4173 --bind 127.0.0.1`을 실행합니다. 별도 빌드나 패키지 설치는 필요 없습니다.
 
-## 수정
+GitHub Pages는 `main` 브랜치의 루트에서 배포합니다. `.nojekyll` 파일을 유지합니다.
 
-- 소개, 경력, 프로젝트 본문: `index.html`
-- 색상, 타이포그래피, 반응형 레이아웃: `styles.css`
-- 프로젝트 분류 필터: `script.js`
+## 경력 집계
 
-프로젝트별 ‘문제 해결 과정 보기’ 등을 누르면 상세 설명을 펼칠 수 있습니다. 프레임워크 개념도의 업무 유형 선택과 프로젝트 분류 필터를 지원합니다. 휴대폰 화면, 키보드 탐색, 동작 줄이기 설정에 대응합니다. 한글 Pretendard 폰트는 `assets`에서 직접 제공하며 라이선스도 함께 포함되어 있습니다. 외부 폰트 서버나 분석 도구에 의존하지 않습니다.
+누적 15개 법인은 본인 확인을 거친 수치입니다. 성우하이텍 5, 창신 인도네시아 1, 화승네트웍스 1, 현대자동차 한국/인도/러시아 3, 유니테크노/MS오토텍/한창엔프라 3, 베바스토 동희 슬로바키아/중국 2로 집계했습니다. 동일 법인의 여러 공장은 한 곳으로 합쳤으며 리코시스템 내부 프레임워크 개발은 제외했습니다. 성우하이텍의 5개 법인은 현 직장의 담당 범위입니다.
 
-이번 시안은 프레임워크 설계와 AI 활용을 중심으로 구성했습니다. Impeccable과 Taste Skill의 정보 구조를 참고하고, 사용자가 요청한 Apple Liquid Glass 및 Dimillian의 SwiftUI Liquid Glass 원칙을 웹용 CSS로 적용했습니다. SwiftUI 네이티브 API를 실행하는 웹사이트는 아닙니다. 정적 파일로 GitHub Pages에 배포할 수 있습니다.
+## 자료와 디자인
 
-Glass UI 스타일은 `glass.css`에서 관리합니다. 투명한 탐색 및 조작 표면, 배경 흐림, 밝은 가장자리와 눌림 반응을 사용합니다. 본문은 불투명도를 높여 가독성을 확보했습니다. 배경 흐림 미지원 환경, 투명도 줄이기, 대비 높이기 및 동작 줄이기 설정에는 대체 스타일이 적용됩니다.
+경력 및 성과는 제공된 경력기술서에 근거합니다. 시스템 개념도는 설명용이며 실제 회사 업무 화면이나 회사 소스 코드를 포함하지 않습니다.
 
-한글 폰트는 Pretendard를 자체 제공하며 라이선스는 `assets/FONT-LICENSE.txt`에 있습니다. 사진은 사용하지 않았고 S-Frame 설명용 개념도를 직접 구현했습니다. 실제 업무 화면 또는 프레임워크 실행 결과는 아닙니다.
+토스 UX 가이드의 정보 위계와 여백을 참고했습니다. 경력 본문은 전문적인 문체를 유지합니다. 토스 로고와 전용 그래픽은 사용하지 않았습니다.
 
-`assets/career-profile.txt`는 제공된 경력기술서 원문입니다. 포트폴리오의 경력기술서 다운로드 링크에서 받을 수 있습니다.
+참고: https://developers-apps-in-toss.toss.im/design/consumer-ux-guide
 
-참고: https://developer.apple.com/documentation/technologyoverviews/liquid-glass 및 https://github.com/Dimillian/Skills/tree/main/swiftui-liquid-glass
-
-자료 기준: 제공된 2026년 10월 28일 경력기술서. 성과는 해당 문서의 기재 내용이며 GitHub 공개 코드로 검증한 결과가 아닙니다. 시스템 도식은 설명용이며 회사의 실제 업무 화면과 코드, 원본 데이터는 포함하지 않았습니다. 연락처는 제공되지 않아 GitHub 링크로 연결했습니다.
+Pretendard 라이선스: `assets/FONT-LICENSE.txt`.
